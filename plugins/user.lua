@@ -9,4 +9,21 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+
+  -- Flutter
+  {
+    "akinsho/flutter-tools.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "stevearc/dressing.nvim", -- optional for vim.ui.select
+    },
+    config = true,
+  },
+
+  -- Copilot
+  {
+    "github/copilot.vim",
+    lazy = false,
+  },
 }
